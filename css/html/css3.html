@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            background-color: #fafafa;
+        }
+        div {
+            box-sizing: border-box;
+            margin: 100px 200px 300px;
+            border: 2px solid red;
+            border-width: 2px, 3px, 4px, 5px;     
+            border-radius: 10px 20px, 30px, 40px; 
+            width: 400px;
+            height: 400px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 5px 3px #00000044;
+        }
+        .profile-img-circle{
+            box-sizing: border-box;
+            margin: 0px;
+            border: 1px solid #dbdbdb;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            
+        }
+
+        .profile-img {
+
+            width: 100%;
+            height: 200px;
+        }
+        .box1-button{}
+
+        .div-button {
+            margin: 40px auto;
+            border: 1px solid #555555;
+            border-radius: 25px;
+            padding: 1px 6px;
+            width: fit-content;
+            height: inherit;
+            background-color: #f0f0f0;
+            font-size: 13.3333;
+            cursor: pointer;
+        }
+        button {
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            padding: 5px 20px;
+            background-color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #dff1ff;
+            }
+
+            &:active {
+                background-color: #1fadff;
+                color: #ffffff;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="profile-img-circle">
+            <img class="profile-img" src="https://velog.velcdn.com/images/pak4184/post/98ba8b4f-7b89-4d28-8376-0dc8d1be805a/image.png" alt="">
+        </div>
+    </div>
+    <button>버튼</button>
+    <div class="div-button">버튼</div> 
+</body>
+</html>
