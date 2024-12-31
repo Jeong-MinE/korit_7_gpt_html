@@ -27,6 +27,14 @@ console.log(1 !== "2"); // 타입 검사 o
  * &&, ||
  * 단축 평가 
  * 
+ * ||(OR)
+ * 좌항 ture || 우항 anything(false) = ture
+ * 좌항 false || 우항 anything(true) = ture(anything)
+ * 
+ * &&(and)
+ * 좌항 ture || 우항 anything(false) = false(anything)
+ * 좌항 false || 우항 anything(true) = false
+ * 
  * 논리 자료 값 || anything 
  * 
  * 
@@ -35,7 +43,7 @@ console.log(1 !== "2"); // 타입 검사 o
  * 논리 자료 값 === false   => false 
  * 
  * null 병합 연산
- * 논리 자료 값 ?? anything
+ * 논리 자료 값 ?? anything 
  * 좌항(anything1) === null || 좌항(anything1) === nudefined => 우항(anything2)
  * 좌항(anything1) 1== null || 좌항(anything1) 1== nudefined => 좌항(anything1)
  */
@@ -60,7 +68,7 @@ console.log(!null);
 console.log(!undefined);
 
 console.log(![1,2,3,4]);
-console.log(![]);  // 배열은 내부에 값이 없더라도 배열의 주소는 존재하기 때문에 true
+console.log(![]);  // 배열은 내부에 값이 없더라도 배열의 주소는 존재하기 때문에 false => !(not) => ture
 console.log(typeof []);
 console.log(![].length);
 

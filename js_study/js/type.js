@@ -34,5 +34,5 @@ console.log(typeof address);
  * boolean(논리 - 참, 거짓)
  * object(객체 - null)
  * undefined(type x)
- * NaN(Not a Number)
+ * NaN(Not a Number) // ex) 1 + null
  */
