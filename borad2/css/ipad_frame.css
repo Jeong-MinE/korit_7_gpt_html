@@ -24,5 +24,53 @@
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #222222;
 }
+
+.pad-header-left,
+.pad-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    width: 150px;
+    height: 100%;
+}
+
+.pad-header-left {
+
+    & > .pad-clock-date {
+        font-weight: 600;
+        color: #222222;
+        cursor: default;
+    }
+}
+
+.pad-header-right {
+    & > svg {
+        width: 40px;
+        height: 40px;
+        margin-left: 3px;
+        fill: #222222;
+        stroke: #222222;
+    }
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 60px;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+
+
+

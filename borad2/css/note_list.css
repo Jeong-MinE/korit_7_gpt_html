@@ -1,0 +1,44 @@
+.note-list-container {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    height: 100%;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.note-box {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 1005;
+    height: 250px;
+    background-color: #000000;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #eeeeee44;
+    }
+}
+
+.note-header {
+    & > h1 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: default;
+    }
+}
+
+.note-main {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
